@@ -32,12 +32,9 @@ By implementing this pipeline, we will be able to analyze the sentiment of tweet
 
 ## Extract, Load & Transform
 
-This ELT pipeline involves using Tweepy, the Twitter API to extract data from Twitter, specifically tweets and replies. The data is retrieved is in a semi-structured format and is stored immediatley into a PostgreSQL database. The data is then extracted and transformed using pandas, a popular data manipulation library in Python, where it is cleaned and reformated into a structured format to fit the requirements of the machine learning project discussed later.
+This ELT pipeline involves using Tweepy, the Twitter API, to extract data from Twitter, specifically tweets and replies. The data is retrieved is in a semi-structured format and is stored into a PostgreSQL database. The data is then extracted and transformed using pandas, a popular data manipulation library in Python, where it is cleaned and reformated into a structured format to fit the requirements of the machine learning project discussed later.
 
-Used for semi-structured data, relevant variables extracted in JSON format. Stored in the database in the below format which could then be extracted and transformed for needed use.
-![alt text](https://github.com/Dorad-H/Twitter_Pipeline/blob/917c0e72d1e1e96f7d7d9f3a6674ee1d35b355e6/Semi%20structured.png "JSON format")
-
-###### <div align="center"> Figure 1: Entity-relationship model </div>
+The pipeline is designed to be automated and monitored using Apache Airflow, an open-source platform for creating, scheduling, and monitoring workflows. We define the pipeline as a DAG (Directed Acyclic Graph), were we schedule of tasks, defined as python functions, and monitor progress. This makes the pipeline more efficient, reliable, and scalable, which is essential when working with large volumes of data.
 
 ## Sentiment Analysis
 
