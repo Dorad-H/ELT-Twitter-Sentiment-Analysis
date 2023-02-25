@@ -1,12 +1,12 @@
 # Twitter Pipeline and Sentiment Analysis
 
-Development of automated data pipelines to extract twitter data, with a sentiment analysis
+Development of automated data pipelines to extract and store twitter data, used for sentiment analysis
 
 ## Table of contents
 
 -   [Description](https://github.com/Dorad-H/ELT-Twitter-Sentiment-Analysis#tech-stack)
 -   [ELT pipeline](https://github.com/Dorad-H/ELT-Twitter-Sentiment-Analysis#extract-load--transform)
--   [Machine Learning](https://github.com/Dorad-H/ELT-Twitter-Sentiment-Analysis#machine-learning)
+-   [Sentiment Analysis](https://github.com/Dorad-H/ELT-Twitter-Sentiment-Analysis#machine-learning)
 -   [Authors](https://github.com/Dorad-H/ELT-Twitter-Sentiment-Analysis#authors)
 
 ## Description
@@ -37,7 +37,7 @@ Used for semi-structured data, relevant variables extracted in JSON format. Stor
 
 ###### <div align="center"> Figure 1: Entity-relationship model </div>
 
-## Machine Learning
+## Sentiment Analysis
 
 Sentiment analysis of company tweets using the [VADER package.](https://github.com/cjhutto/vaderSentiment) Sentiment of tweets scored using this package -1 to 1 with the following groupings shown below:
 
@@ -50,7 +50,7 @@ Logistic Regression used to predict the sentiments by a company
 -   Accuracy of 72%
 -   F1 score of 0.75 on positive values
 
-# Authors
+## Authors
 
 -   [Dorad Hasani](https://github.com/Dorad-H)
 -   [Jan Salcedo](https://github.com/SuperSalcedo22)
