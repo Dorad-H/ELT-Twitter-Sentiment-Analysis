@@ -1,4 +1,4 @@
-# Twitter_Pipeline
+# Twitter Pipeline and Sentiment Analysis
 
 Development of automated data pipelines to extract twitter data, with a sentiment analysis
 
@@ -11,29 +11,31 @@ Development of automated data pipelines to extract twitter data, with a sentimen
 
 ## Description
 
-The following were used due to being free, open source and therefore accessible for the team to use.
+In the age of social media, analyzing user-generated content such as tweets and replies has become a critical component of various businesses and organizations. Sentiment analysis, which involves extracting insights from such data, has become an essential tool in making data-driven decisions. However, before any meaningful analysis can be conducted, the data must first be collected and processed efficiently. This is where an Extract-Load-Transform (ELT) pipeline comes into play.
 
--   Python
+In this project, we aim to create an ELT pipeline that focuses on extracting Twitter data, specifically tweets and replies to those tweets, storing them in a relational database, transforming the data, and then using it for sentiment analysis. The pipeline will be designed to handle large amounts of data, and will be optimized for speed and efficiency.
 
-    -   Allows access to the twitter API for extraction of data
+By implementing this pipeline, we will be able to analyze the sentiment of tweets and their replies, and gain insights into the public perception of various topics. This can be particularly useful for businesses, political campaigns, and other organizations that want to understand how their products, services, or messages are being received by the public.
 
--   Apache Airflow
+## Tech stack
 
-    -   Automates and monitors workflows.
+-   #### Python
 
--   PostgreSQL
+    Used to create the extract and transform the twitter data as well as do the sentiment analysis.
 
-    -   Secure and scalable database in which data can be queried for use.
+-   #### Apache Airflow
 
-## Extract, Transform & Load
+    Used to Automate and monitor the pipeline.
 
-Used for structured data, transformed within python to conform to the below model to ensure the database remained efficient and sacable in future.
-![alt text](https://github.com/Dorad-H/Twitter_Pipeline/blob/f2fb2f6d67c421ec0cf907aef06637455465ecac/ER%20diagram.png "ER Diagram")
+-   #### PostgreSQL
+    A relational database Used to store the transformed data.
 
 ## Extract, Load & Transform
 
 Used for semi-structured data, relevant variables extracted in JSON format. Stored in the database in the below format which could then be extracted and transformed for needed use.
 ![alt text](https://github.com/Dorad-H/Twitter_Pipeline/blob/917c0e72d1e1e96f7d7d9f3a6674ee1d35b355e6/Semi%20structured.png "JSON format")
+
+###### <div align="center"> Figure 1: Entity-relationship model </div>
 
 ## Machine Learning
 
@@ -50,7 +52,7 @@ Logistic Regression used to predict the sentiments by a company
 
 # Authors
 
--   [Dorad Hasani](https://studentsunionucl.org/sites/default/files/u198411/image00060.jpeg)
+-   [Dorad Hasani](https://github.com/Dorad-H)
 -   [Jan Salcedo](https://github.com/SuperSalcedo22)
 -   [Pernelle Gamrowski](https://github.com/pernelleg)
 -   [Helen Luhaäär](https://github.com/HelenLB)
