@@ -17,7 +17,7 @@ In this project, we aim to create an ELT pipeline that focuses on extracting Twi
 
 By implementing this pipeline, we will be able to analyze the sentiment of tweets and their replies, and gain insights into the public perception of various topics. This can be particularly useful for businesses, political campaigns, and other organizations that want to understand how their products, services, or messages are being received by the public.
 
-## Tech stack
+### Tech stack
 
 -   #### Python
 
