@@ -38,13 +38,9 @@ The pipeline is designed to be automated and monitored using Apache Airflow, an 
 
 ## Sentiment Analysis
 
-Sentiment analysis of company tweets using the [VADER package.](https://github.com/cjhutto/vaderSentiment) Sentiment of tweets scored using this package -1 to 1 with the following groupings shown below:
+The purpose of the project is to create a machine learning model that can predict the sentiment of tweets, made by official Twitter accounts of companies like Microsoft and SpaceX, based on its content. The sentiment analysis involves classifying the replies into positive, negative, or neutral categories using the [VADER package](https://github.com/cjhutto/vaderSentiment), and then using the data to train the model. Once trained, the model can be used to predict the sentiment of new tweets, which can be useful for companies to monitor their online reputation and respond to customer feedback in a timely and effective manner. Overall, this project involves applying natural language processing and machine learning techniques to social media data to provide insights into customer sentiment and behavior.
 
--   Negative
--   Neutral (-0.05 to 0.05)
--   Positive
-
-Logistic Regression used to predict the sentiments by a company
+We chose to train and use Logistic Regression to predict the sentiments as it yeilded the highest accuracy score for the given features. Our model achieved the following statistics:
 
 -   Accuracy of 72%
 -   F1 score of 0.75 on positive values
